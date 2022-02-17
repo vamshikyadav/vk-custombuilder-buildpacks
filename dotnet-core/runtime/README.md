@@ -2,7 +2,7 @@
 
 ## Building
 
-`pack build dotnet-runtime-sample --buildpack gcr.io/paketo-buildpacks/dotnet-core`
+`pack build aspdotnet --builder vk-builder:bionic --path /dotnet-core/aspnet`
 
 ## Running
 
