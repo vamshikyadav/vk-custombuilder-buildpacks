@@ -9,7 +9,7 @@ pack build maven-image-name --builder vk-builder:bionic --path /path/to/maven/ap
 Alternatively, if you want to attach a Maven `settings.xml` file to pass additional configuration to Maven.
 
 ```bash
-pack build applications/maven --volume $(pwd)/bindings:/platform/bindings
+pack build maven-image-name --builder vk-builder:bionic --path /path/to/maven/app --volume $(pwd)/bindings:/platform/bindings
 ```
 
 The command above will use the sample `settings.xml` file from this repo. It may be more useful to copy your local `settings.xml` first.
