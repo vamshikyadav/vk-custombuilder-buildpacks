@@ -16,7 +16,7 @@
 
 ## Building application Gradle, maven, dotnet, ruby and golang
 * We can use our builder to build an app by running below commands
-    * pack build aspdotnet --builder vk-builder:bionic --path /Users/vamshikyadav/Documents/code/buildpacks/dotnet-core/aspnet
-    * pack build kotlin --builder vk-builder:bionic --path /Users/vamshikyadav/Documents/code/buildpacks/kotlin 
-    * pack build maven --builder vk-builder:bionic --path /Users/vamshikyadav/Documents/code/buildpacks/maven
-    * pack build goexample --builder vk-builder:bionic --path /Users/vamshikyadav/Documents/code/buildpacks/example-go/hello/
+    * pack build aspdotnet --builder vk-builder:bionic --path /dotnet-core/aspnet
+    * pack build kotlin --builder vk-builder:bionic --path /kotlin 
+    * pack build maven --builder vk-builder:bionic --path /maven
+    * pack build goexample --builder vk-builder:bionic --path /example-go/hello/
