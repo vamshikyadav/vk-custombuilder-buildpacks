@@ -2,7 +2,8 @@
 
 ## Building
 
-```pack build kotlin --builder vk-builder:bionic --path /path/to/kotlin/app
+```bash
+pack build kotlin --builder vk-builder:bionic --path /path/to/kotlin/app
 ```
 
 ## Running
