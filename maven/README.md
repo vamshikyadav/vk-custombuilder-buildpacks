@@ -3,7 +3,7 @@
 ## Building
 
 ```bash
-pack build applications/maven
+pack build maven-image-name --builder vk-builder:bionic --path /path/to/maven/app
 ```
 
 Alternatively, if you want to attach a Maven `settings.xml` file to pass additional configuration to Maven.
