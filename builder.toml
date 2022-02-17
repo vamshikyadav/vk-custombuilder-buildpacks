@@ -1,0 +1,105 @@
+description = "Ubuntu bionic base image with buildpacks for Java, .NET Core, NodeJS, Go, Python, PHP, Ruby, Apache HTTPD, NGINX and Procfile"
+
+[[buildpacks]]
+  uri = "docker://gcr.io/paketo-buildpacks/dotnet-core:0.11.3"
+  version = "0.11.3"
+
+[[buildpacks]]
+  uri = "docker://gcr.io/paketo-buildpacks/go:0.15.0"
+  version = "0.15.0"
+
+[[buildpacks]]
+  uri = "docker://gcr.io/paketo-buildpacks/java-native-image:7.10.0"
+  version = "7.10.0"
+
+[[buildpacks]]
+  uri = "docker://gcr.io/paketo-buildpacks/java:6.9.0"
+  version = "6.9.0"
+
+[[buildpacks]]
+  uri = "docker://gcr.io/paketo-buildpacks/nginx:0.5.2"
+  version = "0.5.2"
+
+[[buildpacks]]
+  uri = "docker://gcr.io/paketo-buildpacks/nodejs:0.13.0"
+  version = "0.13.0"
+
+
+[[buildpacks]]
+  uri = "docker://gcr.io/paketo-buildpacks/procfile:5.0.3"
+  version = "5.0.3"
+
+[[buildpacks]]
+  uri = "docker://gcr.io/paketo-buildpacks/python:0.9.0"
+  version = "0.9.0"
+
+[[buildpacks]]
+  uri = "docker://gcr.io/paketo-buildpacks/ruby:0.11.0"
+  version = "0.11.0"
+
+[lifecycle]
+  version = "0.13.3"
+
+[[order]]
+
+  [[order.group]]
+    id = "paketo-buildpacks/ruby"
+    version = "0.11.0"
+
+[[order]]
+
+  [[order.group]]
+    id = "paketo-buildpacks/dotnet-core"
+    version = "0.11.3"
+
+[[order]]
+
+  [[order.group]]
+    id = "paketo-buildpacks/nodejs"
+    version = "0.13.0"
+
+[[order]]
+
+  [[order.group]]
+    id = "paketo-buildpacks/go"
+    version = "0.15.0"
+
+[[order]]
+
+  [[order.group]]
+    id = "paketo-buildpacks/python"
+    version = "0.9.0"
+
+
+
+[[order]]
+
+  [[order.group]]
+    id = "paketo-buildpacks/nginx"
+    version = "0.5.2"
+
+[[order]]
+
+  [[order.group]]
+    id = "paketo-buildpacks/java-native-image"
+    version = "7.10.0"
+
+[[order]]
+
+  [[order.group]]
+    id = "paketo-buildpacks/java"
+    version = "6.9.0"
+
+[[order]]
+
+  [[order.group]]
+    id = "paketo-buildpacks/procfile"
+    version = "5.0.3"
+
+[stack]
+  
+  build-image = "cnbs/vamshi-stack-build:bionic"
+  id = "io.buildpacks.stacks.bionic"
+  run-image = "cnbs/vamshi-stack-run:bionic"
+
+  
