@@ -19,4 +19,4 @@
     * pack build aspdotnet --builder vk-builder:bionic --path /Users/vamshikyadav/Documents/code/buildpacks/dotnet-core/aspnet
     * pack build kotlin --builder vk-builder:bionic --path /Users/vamshikyadav/Documents/code/buildpacks/kotlin 
     * pack build maven --builder vk-builder:bionic --path /Users/vamshikyadav/Documents/code/buildpacks/maven
-    * pack build goexample --builder dfkl-builder:bionic --path /Users/vamshikyadav/Documents/code/buildpacks/example-go/hello/
+    * pack build goexample --builder vk-builder:bionic --path /Users/vamshikyadav/Documents/code/buildpacks/example-go/hello/
